@@ -15,11 +15,11 @@ export default function Effect(props) {
       clearInterval(timer);
     };
     //return ()=>clearTimeout(timer);
-  });
+  }, [time]);
 
   useEffect(() => {
     document.title = count;
-  });
+  }, [count]);
 
   return (
     <div>
